@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav bar*/
+body{
+    background-color: pink;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+    padding: 20px;
+}
+nav ul{         /* this is a disgent child of ul */
+    display: flex;
+    width:200px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+ul li{
+    width: 60px;
+    background-color: aqua;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.h2 :hover{
+    color: aqua;
+    font-size: 40px;
+}
+/*applying media quires */
+/*
+@media screen and (max-width:600) {
+        nav{
+            flex-wrap:wrap;
+        }
+}*/
+/* main design*/
+main{
+    margin:25px 100px;  
+}
+main h2,h1{
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    gap:30px;
+    text-align: center;
+}
+.pic{
+    margin:10px;
+}
+.para{
+    margin:10px;
+}
+button{
+    margin:10px;
+    padding: 5px;
+    background-color: black;
+    color: aliceblue;
+    border-radius:5px;
+}
+
+/*using media quires for main
+*/
+@media screen and (max-width:600px){
+    .main{
+        flex-direction: column;
+    } 
+    main{
+        margin:20px 30px;
+    }
+}
+/*footer design*/
+footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: lightgray;
+    bottom:0px;
+}

@@ -1,0 +1,90 @@
+GET http://localhost:3000/user-api/users
+//Get req does not conteains body because it is accessing data from the server 
+###
+GET http://localhost:3000/user-api/users/1
+###
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":1,
+"name":"Hari",
+    "age":13
+}
+
+// above is the post body
+// there should be no line-gap btw url and content type 
+
+###
+PUT http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"harish",
+    "age":13   
+}
+###
+DELETE http://localhost:3000/user-api/users/1
+
+// get request and delete req does not support the body of the request object so that these two request can send the data through "end point "
+// but post and put has the body 
+
+
+//Products Api's:
+###
+GET http://localhost:3000/product-api/products
+
+
+###
+GET http://localhost:3000/product-api/products/Bag
+
+
+###
+POST http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "id":2,
+    "name":"Bag",
+    "price": 200
+}
+###
+
+PUT http://localhost:3000/product-api/products
+Content-Type: application/json
+
+{
+    "id":2,
+    "name":"Bag",
+    "price":1000   
+}
+###
+
+DELETE http://localhost:3000/product-api/products/2
+
+// students http reqs
+###
+GET  http://localhost:3000/student-api/students
+
+###
+POST http://localhost:3000/student-api/students
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"Harsha",
+    "branch":"CSE",
+    "year":"2nd"
+}
+
+###
+PUT http://localhost:3000/student-api/students
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"HARSHA",
+    "branch":"CSE",
+    "year":"2nd"
+}

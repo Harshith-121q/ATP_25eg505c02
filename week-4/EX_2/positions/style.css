@@ -1,0 +1,28 @@
+.container{
+    width:500px;
+    height: 600px;
+    background-color: antiquewhite;
+    margin: auto;
+    position: relative;
+}
+.container2{
+    width: 50px;
+    height: 60px;
+   
+
+}
+#c1{
+    position: absolute;
+    background-color: aqua;
+    top:0px;
+    left:100%;
+}
+#c2{
+    background-color: tomato;
+    position: absolute;
+    left:100%;
+}
+#c3{
+    background-color: brown;
+}
+

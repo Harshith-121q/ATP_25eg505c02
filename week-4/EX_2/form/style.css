@@ -1,0 +1,13 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+form{
+    width: 800px;
+    height: 600px;
+    display: block;
+    margin:auto;
+    background-color: brown;
+    
+}

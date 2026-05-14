@@ -1,0 +1,97 @@
+
+// day-7
+// read all users (making this protected route )
+// here we aree passing the token for the cookie for making the get http req as protected
+GET  http://localhost:9000/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhhcnNoYTEyMXFAZ21haWwuY29tIiwiaWF0IjoxNzc4MDE1NzgwLCJleHAiOjE3NzgwMTkzODB9.ZI_9vr8We3l0ckOQ3TzRY3oJhxnHjYFoN60ULjqiA3s
+
+###
+GET http://localhost:9000/user-api/user
+Cookie: token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhhcnNoYTEyMXFAZ21haWwuY29tIiwiaWF0IjoxNzc4MjY3NDQ0LCJleHAiOjE3NzgyNzEwNDR9.Ax7LE-hiEBa-3GKqnRDuOh3qlbgMRaxVpsDFzhpTqSM
+// in the above the current user can access details of any user so we are assigning the present token to the user so that he cannot see other user detalis 
+
+###
+POST http://localhost:9000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"Harsh",
+    "password":"harsha121q",
+    "email":"harsha121q@gmail.com",
+    "age":20
+}
+
+###
+POST http://localhost:9000/user-api/auth
+Content-Type: application/json
+
+{
+    "email":"harsha121q@gmail.com",
+    "password":"harsha121q"
+}
+
+
+###
+PUT http://localhost:9000/user-api/users/69b26198fa17c9691f8c313f
+Content-Type: application/json
+
+{
+    "username":"Harsha",
+    "password":"harshith121q",
+    "email":"harshith121q@gmail.com",
+    "age":20
+}
+
+
+// adding products to the email
+###
+PUT http://localhost:9000/user-api/cart/product-api/69b26107fa17c9691f8c3139
+###
+DELETE  http://localhost:9000/user-api/users/69abd2a538eb53ee26fca6d5
+
+
+
+
+// email validation
+// indexes 
+// middleware
+
+
+
+// products API's
+// getting All product's details 
+###
+GET http://localhost:9000/product-api/products
+
+// get product by id
+### 
+GET http://localhost:9000/product-api/products/69b0dae51879f5a66769a833
+
+###
+POST http://localhost:9000/product-api/products
+Content-Type: application/json
+
+{
+    "productname":"pen",
+    "productId":102,
+    "price":20000,
+    "brand":"camlin"
+}
+
+###
+PUT http://localhost:9000/product-api/products/69b0dae51879f5a66769a833
+Content-Type: application/json
+
+{
+     "productname":"Refrigirator",
+    "productId":101,
+    "price":20000,
+    "brand":"LG"
+}
+
+// delete the product
+###
+DELETE http://localhost:9000/product-api/products/69b0dae51879f5a66769a833
+
+
+
