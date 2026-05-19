@@ -6,20 +6,28 @@ The work is centered on writing functions, comparing values, and processing arra
 ## Contents
 
 - `day_1/`: Basic JavaScript function and array assignments.
-- `day_2/`: Continued JavaScript practice with a standalone assignment.
+- `day_2/`: Continued JavaScript practice with object and array manipulation.
 
 ## What I did this week
 
-- Implemented number comparison logic in `Compare#nos.js` and `Compare2Nos.js`.
-- Built functions to find the largest and smallest values using arrays.
-- Created `FindSmallestNoInArray.js` and `FunsReturnBig.js` for algorithm practice.
-- Wrote array summation logic in `FunsReceivesArryAndRetturnSum.js` and `SumOfArray.js`.
-- Practiced returning the last index of an argument in `lastAssRetuenIndexOfanArgg.js`.
-- Completed an additional assignment in `day2ass.js` to reinforce syntax and logic.
+- Implemented number comparison logic in `Compare#nos.js` and `Compare2Nos.js` using `if/else` conditions.
+- Built array traversal and search logic to find the smallest number in `FindSmallestNoInArray.js`.
+- Practiced creating reusable functions in `FunsReceivesArryAndRetturnSum.js` and `FunsReturnBig.js`.
+- Added array sum logic in `SumOfArray.js` and learned how to accumulate values with a loop.
+- Used index lookup and array methods to return the last position in `lastAssRetuenIndexOfanArgg.js`.
+- Expanded problem-solving skills in `day2ass.js` by modifying an employee list using `splice`, removing objects by criteria, and updating nested marks.
+
+## Code highlights
+
+- `Compare#nos.js`: compare two numbers and print the larger one.
+- `FindSmallestNoInArray.js`: loop through a number array and maintain the smallest value.
+- `FunsReceivesArryAndRetturnSum.js`: define a function that receives an array and returns the sum.
+- `lastAssRetuenIndexOfanArgg.js`: practice searching arrays and returning indices.
+- `day2ass.js`: manage an array of employee objects, update records, and remove items by field value.
 
 ## Skills practiced
 
-- JavaScript function definitions and return values
-- Working with arrays and looping constructs
-- Basic arithmetic, comparison operations, and problem solving
-- Organizing assignment files and documenting exercises
+- JavaScript basics: variables, conditionals, loops, and arrays
+- Writing and testing small utility functions
+- Object and array manipulation
+- Debugging and understanding console output

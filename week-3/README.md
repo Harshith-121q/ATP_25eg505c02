@@ -10,14 +10,23 @@ The work demonstrates how to model data, connect to a database, and build API ro
 
 ## What I did this week
 
-- Learned MongoDB schema design and created models such as `UserModel.js` and `ProductModel.js`.
-- Built API routes in `API_s/` for products and users.
-- Connected a Node.js backend to MongoDB using Express and database configuration.
-- Practiced building database-driven applications with backend routing, model usage, and request handling.
-- Documented MongoDB concepts and examples in `mongoDB_practice.txt`.
+- Created MongoDB schemas and models in `BackendDB/models/UserModel.js` and `BackendDB/models/ProductModel.js`.
+- Built REST API routes in `BackendDB/API_s/productApi.js` and `BackendDB/API_s/ussrApi.js`.
+- Set up an Express server in `BackendDB/server.js` with middleware, route mounting, and database connection.
+- Added a token verification middleware in `BackendDB/middleware/verifytoken.js` to learn protected routes.
+- Used `server2.js` as an additional backend practice file for experimenting with server behavior.
+- Recorded MongoDB practice notes and commands in `mongoDB_practice.txt`.
+
+## Code highlights
+
+- `ProductModel.js`: defines product fields and validation using Mongoose schema.
+- `UserModel.js`: defines user fields, required values, and role information.
+- `productApi.js`: implements product CRUD operations including add, read, update, and delete.
+- `server.js`: configures Express middleware, mounts routers, and listens on a port.
 
 ## Skills practiced
 
-- MongoDB schema and model creation
-- Writing backend API routes for data operations
-- Working with Express middleware, route handlers, and database connectivity
+- Designing MongoDB schemas with Mongoose
+- Building Express API routes for database operations
+- Using middleware for logging and request handling
+- Connecting Node.js applications to MongoDB
